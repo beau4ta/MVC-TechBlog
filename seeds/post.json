@@ -1,0 +1,17 @@
+[
+    {
+        "user_id": 1,
+        "title": "So Excited!",
+        "post": "I'm really glad this new tech blog site is up and running."
+    },
+    {
+        "user_id": 2,
+        "title": "New Guy",
+        "post": "I am new to web development and I'm hoping to learn a lot here!"
+    },
+    {
+        "user_id": 3,
+        "title": "Great Job",
+        "post": "Shoutout to the developers! You never cease to amaze me."
+    }
+]

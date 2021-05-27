@@ -1,0 +1,17 @@
+[
+    {
+        "user_id": 1,
+        "post_id": 3,
+        "comment": "I definitely agree with you!"
+    },
+    {
+        "user_id": 2,
+        "post_id": 1,
+        "comment": "I couldn't have said it better myself!"
+    },
+    {
+        "user_id": 3,
+        "post_id": 2,
+        "comment": "This is a great resource!"
+    }
+]
