@@ -1,8 +1,13 @@
 <div>
 {{#each posts as |post|}}
-
-{{> post-info post}}
+<div class="post-card">
+    <div class="post-header">
+        <h4 class="post-title"><a class="post-info" href="/post/{{id}}">{{title}}</a></h4>
+        <h6 class="post-sub">Posted by {{user.name}} on {{date_created}}</h6>
+    </div>
+    <div class="post-body">
+        <p class="post-text">{{post.post}}</p>
+    </div>
 </div>
-
-{{else}}
-<h3 class="no-post">There are no posts yet!</h3>
+{{/each}}
+</div>

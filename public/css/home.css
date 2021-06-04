@@ -1,0 +1,14 @@
+.post-card{
+    background-color: rgb(249, 207, 154);
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 45px;
+    border-radius: 10px;
+    border: solid 5px rgb(14, 88, 167);
+    padding: 10px;
+    box-shadow: 5px 5px rgb(9, 60, 114);
+}
+
+.post-info{
+    color: rgb(14, 88, 167);
+}

@@ -97,8 +97,10 @@ router.post('/login', (req, res) => {
             req.session.user_id = userData.id;
             res.session.name = userData.name;
             req.session.loggedIn = true;
-            res.json({ user: userData, message: "Successfully logged in!"});
+            res.redirect('/dashboard');
         });
+        console.log(userData.name);
+        console.log(req.session);
     });
 });
 

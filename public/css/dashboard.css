@@ -1,0 +1,20 @@
+.con-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.post-btn{
+    background-color:  rgb(14, 88, 167);
+    color: white;
+    border-radius: 10px;
+    margin-top: 500px;
+    padding: 10px;
+}
