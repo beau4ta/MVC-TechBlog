@@ -95,7 +95,7 @@ router.post('/login', (req, res) => {
         }
         req.session.save(() => {
             req.session.user_id = userData.id;
-            res.session.name = userData.name;
+            req.session.name = userData.name;
             req.session.loggedIn = true;
             res.redirect('/dashboard');
         });
