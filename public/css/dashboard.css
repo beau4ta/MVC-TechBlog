@@ -1,20 +1,53 @@
+.dash-container{
+    display: flex;
+  
+}
+
+.dash-header-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dash-header{
+    margin: 20px;
+    background-color: rgb(249, 207, 154);
+    padding: 10px;
+    border: 5px inset rgb(14, 88, 167);
+    color: rgb(14, 88, 167);
+    text-shadow: 2px 2px rgb(6, 37, 70);
+    box-shadow: 5px 5px rgb(10, 62, 118);
+}
+
+.current-post{
+    color: rgb(14, 88, 167);
+    text-shadow: 2px 2px rgb(6, 37, 70);
+    font-size: xx-large;
+    padding: 15px;
+    margin: 15px;
+}
+
 .con-con{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    flex-grow: 3;
 }
 
 .btn-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: flex-end;
+    padding: 20px;
 }
 
 .post-btn{
     background-color:  rgb(14, 88, 167);
     color: white;
     border-radius: 10px;
-    margin-top: 500px;
     padding: 10px;
 }

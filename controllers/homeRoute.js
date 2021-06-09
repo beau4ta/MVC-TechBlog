@@ -57,7 +57,7 @@ router.get('/post/:id', (req, res) => {
             return;
         }
         const posts = postData.get({ plain: true });
-        res.render('viewPost', {post, loggedIn: req.session.loggedIn});
+        res.render('viewPost', {posts, loggedIn: req.session.loggedIn});
     })
     .catch(err => {
         console.log(err);

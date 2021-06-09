@@ -1,0 +1,80 @@
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.post-body{
+    background-color:  rgb(249, 207, 154);
+    border: inset 5px rgb(14, 88, 167);
+    padding: 10px;
+    box-shadow: 5px 5px ;
+}
+
+.body-input{
+    width: 450px;
+    height: 35px;
+}
+
+.post-title{
+    font-style: italic;
+    color: rgb(14, 88, 167);
+    text-shadow: 1px 1px rgb(10, 62, 118);
+}
+
+.title-body{
+color: rgb(14, 88, 167);
+}
+
+.post-body{
+    color: rgb(14, 88, 167);
+    width: 500px;
+}
+
+.created-by{
+    color: rgb(249, 207, 154);
+    padding: 10px;
+}
+
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.comment-input{
+    height: 50px;
+    border-radius: 10px;
+}
+
+.comment-btn-con{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment-btn{
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-btn{
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.delete-btn{
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}

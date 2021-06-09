@@ -1,0 +1,41 @@
+<div class="con-con">
+<div class="post-container">
+    <div class="post-body">
+        <h3 class="post-title">Title</h3>
+        <h4 class="title-body">{{post.title}}</h4>
+        <h3 class="post-title">Content</h3>
+        <h4 class="post-body">{{post.post}}</h4>
+    </div>
+    <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
+</div>
+</div>
+
+<div class="comment-section">
+    {{#each comments as |comment|}}
+    <div class="sub-section">
+        <h4 class="comment-text">{{comment.comment}}</h4>
+    </div>
+    <div class="sub-section">
+        <h6 class="comment-name">By {{user.name}} on {{format_date date_created}}</h6>
+    </div>
+    {{/each}}
+</div>
+
+{{#if loggedIn}}
+<div class="con-con">
+<div class="comment-container">
+    <form class="comment-form">
+  <div>
+    <textarea class="comment-input" name="comment-body"></textarea>
+  </div>
+
+  <div class="comment-btn-con">
+    <button class="comment-btn" type="submit">Add comment!</button>
+  </div>
+</form>
+</div>
+</div>
+{{/if}}
+
+
+
