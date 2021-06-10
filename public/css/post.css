@@ -29,6 +29,8 @@ color: rgb(14, 88, 167);
 }
 
 .post-body{
+    display: flex;
+    flex-direction: column;
     color: rgb(14, 88, 167);
     width: 500px;
 }
@@ -62,7 +64,8 @@ color: rgb(14, 88, 167);
 
 .btn-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 .save-btn{
@@ -77,4 +80,18 @@ color: rgb(14, 88, 167);
     border-radius: 10px;
     color: white;
     padding: 10px;
+}
+
+.create-btn{
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
+    width: 6rem
+}
+
+.edit-btn{
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 15px;
 }

@@ -12,8 +12,8 @@ async function editPost (event) {
     const response = await fetch(`/api/post/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-          title,
-          post
+          title: title,
+          post: post
         }),
         headers: {
           'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ async function editPost (event) {
       });
 
     if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/');
         } else {
         alert(response.statusText);
         }
@@ -29,3 +29,9 @@ async function editPost (event) {
   }
   
   $('.save-btn').on('click', editPost);
+
+const toEditPage = () => {
+  document.location.replace(`/dashboard/edit/${id}`);
+}
+
+$('.edit-btn').on('click', toEditPage);

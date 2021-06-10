@@ -4,17 +4,17 @@ const toPostPage = () => {
 
 $('.post-btn').on('click', toPostPage);
 
-const addPost = (event) => {
+const addPost = async (event) => {
     event.preventDefault();
 
-    const title = $('.title-input').val();
-    const post = $('.body-input').val();
+    const title = $('.title-text').val();
+    const post = $('.body-text').val();
 
-    const response = fetch('api/posts', {
+    const response = await fetch('/api/post', {
         method: 'POST',
         body: JSON.stringify({
-            title,
-            post
+            title: title,
+            post: post
           }),
           headers: {
             'Content-Type': 'application/json'
@@ -22,7 +22,7 @@ const addPost = (event) => {
         });
       
         if (response.ok) {
-          document.location.replace('/dashboard');
+          document.location.replace('/');
         } else {
           alert(response.statusText);
         }

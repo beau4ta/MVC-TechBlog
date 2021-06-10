@@ -4,7 +4,7 @@
 </div>
 
 <div class="dash-container">
-{{#each posts as |post|}}
+{{#each post as |post|}}
 <div class="post-container">
     <div class="post-body">
         <h3 class="post-title">Title</h3>
@@ -15,7 +15,7 @@
     <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
 </div>
 
-<a href="/dashboard/edit/{{post.id}}"><button class="post-btn">Edit Post</button></a>
+<a href="/dashboard/edit/{{post.id}}"><button class="edit-btn">Edit Post</button></a>
 {{/each}}
 
 {{else}}

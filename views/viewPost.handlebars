@@ -2,12 +2,13 @@
 <div class="post-container">
     <div class="post-body">
         <h3 class="post-title">Title</h3>
-        <h4 class="title-body">{{post.title}}</h4>
+        <h4 class="title-body">{{{post.title}}}</h4>
         <h3 class="post-title">Content</h3>
-        <h4 class="post-body">{{post.post}}</h4>
+        <h4 class="post-body">{{{post.post}}}</h4>
     </div>
     <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
 </div>
+<button class="edit-btn">Edit post</button>
 </div>
 
 <div class="comment-section">
