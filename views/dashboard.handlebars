@@ -11,13 +11,11 @@
 {{#each posts as |post|}}
 <div class="post-container">
     <div class="inner-container">
-    <div class="post-con">
-        <h3 class="post-title">Title</h3>
+    <div class="post-body">
         <h4 class="title-body">{{post.title}}</h4>
-        <h3 class="post-title">Content</h3>
-        <h4 class="post-body">{{post.post}}</h4>
+        <h4 class="post-text">{{post.post}}</h4>
     </div>
-    <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
+    <h4 class="created-by">Created by {{user.name}} on {{format_date post.date_created}}</h4>
 </div>
 
 <a href="/dashboard/edit/{{id}}"><button class="edit-btn">Edit Post</button></a>

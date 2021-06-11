@@ -55,7 +55,6 @@ router.get('/:id', (req, res) => {
         return;
         }
         res.json(postData);
-        console.log(postData)
     })
     .catch(err => {
         console.log(err);

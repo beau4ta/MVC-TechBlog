@@ -11,7 +11,7 @@ async function commentPost(event) {
         const response = await fetch('/api/comments', {
           method: 'POST',
           body: JSON.stringify({
-            post: post,
+            post_id: post,
             comment: comment
           }),
           headers: {
@@ -21,7 +21,7 @@ async function commentPost(event) {
         console.log(response)
       
         if (response.ok) {
-          alert("Comment posted!")
+          document.location.reload();
         } else {
           alert(response.statusText);
         }

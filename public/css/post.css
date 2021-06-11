@@ -39,6 +39,12 @@
     height: 35px;
 }
 
+.post{
+    color: rgb(14, 88, 167);
+    text-shadow: 1px 1px rgb(10, 62, 118);
+    font-size: large;
+}
+
 .post-title{
     font-style: italic;
     color: rgb(14, 88, 167);
@@ -47,10 +53,10 @@
 
 .title-body{
 color: rgb(14, 88, 167);
-background-color:  rgb(249, 207, 154);
-border: inset 5px rgb(14, 88, 167);
-padding: 10px;
-box-shadow: 2px 2px rgb(7, 37, 69);
+text-shadow: 2px 2px rgb(10, 56, 106);
+font-weight: bolder;
+font-size: xx-large;
+text-decoration: underline;
 }
 
 .created-by{
@@ -58,6 +64,7 @@ box-shadow: 2px 2px rgb(7, 37, 69);
     text-shadow: 2px 2px teal;
     border: outset 5px rgb(9, 25, 147);
     margin-top: 10px;
+    padding: 5px;
     background-color: rgb(14, 88, 167);
     font-size: 1rem;
 }
@@ -88,6 +95,7 @@ box-shadow: 2px 2px rgb(7, 37, 69);
 .btn-container{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     padding: 10px;
 }
 
@@ -132,4 +140,11 @@ box-shadow: 2px 2px rgb(7, 37, 69);
     margin: 15px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.delete-comment{
+    text-align: right;
+    background-color: rgb(14, 88, 167);
+    border-radius: 10px;
+    color: white;
 }

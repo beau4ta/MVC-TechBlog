@@ -13,6 +13,11 @@ body{
 
 .navbar-brand{
     color: rgb(14, 88, 167);
+    text-shadow: 2px 2px rgb(9, 48, 91);
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-left: 10px;
+
 }
 
 #navbarNav{
@@ -23,6 +28,10 @@ body{
 
 .nav-link{ 
     color: rgb(14, 88, 167);
+    text-shadow: 1px 1px rgb(10, 59, 111);
+    margin-right: 20px;
+    text-align: right;
+    font-size: large;
 }
 
 .credits{
