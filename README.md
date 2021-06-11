@@ -43,7 +43,7 @@
   
 GitHub Repo: https://github.com/beau4ta/MVC-TechBlog
 
-Live Site:
+Live Site: https://radiant-dusk-82859.herokuapp.com/
 
 <img src="assets/techSS1.png">
 <img src="assets/techSS2.png">
