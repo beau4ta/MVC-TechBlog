@@ -57,6 +57,7 @@ router.get('/post/:id', (req, res) => {
             return;
         }
         const posts = postData.get({ plain: true });
+        console.log(posts)
         res.render('viewPost', {posts, loggedIn: req.session.loggedIn});
     })
     .catch(err => {

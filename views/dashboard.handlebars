@@ -1,12 +1,17 @@
  <div class="dash-header-con">
         <h2 class="dash-header">Dashboard</h2>
-        {{#if post.length}}
 </div>
 
+{{#if posts.length}}
+
 <div class="dash-container">
-{{#each post as |post|}}
+
+<div class="outer-container">
+
+{{#each posts as |post|}}
 <div class="post-container">
-    <div class="post-body">
+    <div class="inner-container">
+    <div class="post-con">
         <h3 class="post-title">Title</h3>
         <h4 class="title-body">{{post.title}}</h4>
         <h3 class="post-title">Content</h3>
@@ -15,7 +20,9 @@
     <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
 </div>
 
-<a href="/dashboard/edit/{{post.id}}"><button class="edit-btn">Edit Post</button></a>
+<a href="/dashboard/edit/{{id}}"><button class="edit-btn">Edit Post</button></a>
+</div>
+</div>
 {{/each}}
 
 {{else}}

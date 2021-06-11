@@ -1,4 +1,4 @@
-<div class="post-container">
+<div class="outer-container">
     <div class="post-header">
         <h3 class="create-post">Edit Post</h3>
     </div>
@@ -7,7 +7,7 @@
         <input class="title-input" value="{{post.title}}">
         <h3 class="post-title">Content</h3>
         <input class="body-input" value="{{post.post}}">
-        <p class="created-by">|Created by {{user.name}} on {{format_date post.date_created}}|</p>
+        <p class="created-by">Created by {{user.name}} on {{format_date post.date_created}}</p>
         <div class="btn-container">
             <button class="save-btn">Save</button>
             <button class="delete-btn">Delete</button>

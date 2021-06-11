@@ -7,8 +7,8 @@ async function commentPost(event) {
       window.location.toString().split('/').length - 1
     ];
   
-    if (comment_text) {
-        const response = await fetch('/api/comment', {
+    if (comment) {
+        const response = await fetch('/api/comments', {
           method: 'POST',
           body: JSON.stringify({
             post_id: post_id,
@@ -26,3 +26,5 @@ async function commentPost(event) {
         }
       }
   }
+
+  $('.comment-btn').on('click', commentPost);

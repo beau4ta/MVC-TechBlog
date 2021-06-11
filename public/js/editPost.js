@@ -29,9 +29,3 @@ async function editPost (event) {
   }
   
   $('.save-btn').on('click', editPost);
-
-const toEditPage = () => {
-  document.location.replace(`/dashboard/edit/${id}`);
-}
-
-$('.edit-btn').on('click', toEditPage);

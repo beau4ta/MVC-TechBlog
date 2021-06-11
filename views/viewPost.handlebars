@@ -2,38 +2,37 @@
 <div class="post-container">
     <div class="post-body">
         <h3 class="post-title">Title</h3>
-        <h4 class="title-body">{{{post.title}}}</h4>
+        <h4 class="title-body">{{{posts.title}}}</h4>
         <h3 class="post-title">Content</h3>
-        <h4 class="post-body">{{{post.post}}}</h4>
+        <h4 class="post-body">{{{posts.post}}}</h4>
     </div>
-    <h4 class="created-by">| Created by {{user.name}} on {{format_date post.date_created}} |</h4>
+    <h4 class="created-by">Created by {{posts.user.name}} on {{format_date posts.date_created}}</h4>
 </div>
-<button class="edit-btn">Edit post</button>
+<a href='/dashboard/edit/{{posts.id}}'><button class="edit-btn">Edit post</button></a>
 </div>
 
+{{#each posts.comments as |comment|}}
 <div class="comment-section">
-    {{#each comments as |comment|}}
     <div class="sub-section">
         <h4 class="comment-text">{{comment.comment}}</h4>
     </div>
     <div class="sub-section">
-        <h6 class="comment-name">By {{user.name}} on {{format_date date_created}}</h6>
+        <h6 class="comment-name">By {{comment.user.name}} on {{format_date comment.date_created}}</h6>
     </div>
-    {{/each}}
 </div>
+    {{/each}}
+
 
 {{#if loggedIn}}
 <div class="con-con">
 <div class="comment-container">
-    <form class="comment-form">
   <div>
-    <textarea class="comment-input" name="comment-body"></textarea>
+    <textarea class="comment-input"></textarea>
   </div>
 
   <div class="comment-btn-con">
     <button class="comment-btn" type="submit">Add comment!</button>
   </div>
-</form>
 </div>
 </div>
 {{/if}}
