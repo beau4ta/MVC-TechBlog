@@ -25,6 +25,9 @@
 }
 
 .post-body{
+    display: flex;
+    flex-direction: column;
+    color: rgb(14, 88, 167);
     background-color:  rgb(249, 207, 154);
     border: inset 5px rgb(14, 88, 167);
     padding: 10px;
@@ -50,12 +53,6 @@ padding: 10px;
 box-shadow: 2px 2px rgb(7, 37, 69);
 }
 
-.post-body{
-    display: flex;
-    flex-direction: column;
-    color: rgb(14, 88, 167);
-}
-
 .created-by{
     color: rgb(249, 207, 154);
     text-shadow: 2px 2px teal;
@@ -68,12 +65,13 @@ box-shadow: 2px 2px rgb(7, 37, 69);
 .comment-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end;
 }
 .comment-input{
     height: 50px;
+    width: 15rem;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .comment-btn-con{
@@ -120,4 +118,18 @@ box-shadow: 2px 2px rgb(7, 37, 69);
     color: white;
     margin-bottom: 15px;
     padding: 5px;
+}
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    color: rgb(14, 88, 167);
+    background-color:  rgb(249, 207, 154);
+    border: inset 5px rgb(14, 88, 167);
+    padding: 10px;
+    box-shadow: 2px 2px rgb(7, 38, 72);
+    padding: 10px;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
 }

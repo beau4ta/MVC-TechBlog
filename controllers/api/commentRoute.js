@@ -18,6 +18,7 @@ router.post('/', withAuth, (req, res) => {
             post_id: req.body.post_id,
             user_id: req.session.user_id
         })
+        console.log(comment)
         .then(commentData => res.json(commentData))
         .catch(err => {
             console.log(err);
